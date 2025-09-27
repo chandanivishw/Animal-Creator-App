@@ -35,10 +35,12 @@ button.addEventListener("click",()=>{
     para.textContent = animal.describe();
     animalArray.push(animal);
     createAnimalList();
+    }else{
+        alert("Please fill the input fields 🙏 !");
     }
 
 
-})
+});
 // button.addEventListener("click",(e)=>{
 //     e.preventDefault(); // page reload hone se rokta hai
 //     let name = inputName.value ;
