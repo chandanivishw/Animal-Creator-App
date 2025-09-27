@@ -29,11 +29,13 @@ button.addEventListener("click",()=>{
     let name = inputName.value ;
     let color = inputColor.value ;
     let age = inputAge.value ;
+    if(name !== "" && color !== "" && age !== ""){
     const animal = new Animal(name,color,age);
     console.log(animal.describe());
     para.textContent = animal.describe();
     animalArray.push(animal);
     createAnimalList();
+    }
 
 
 })
